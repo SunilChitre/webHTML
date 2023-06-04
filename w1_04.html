@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Alert page</title>
+
+</head>
+
+<body>
+
+<h1>Experimenting with Alert Buttons </h1>
+
+<p> Java script Alerts test </p>
+<Button on click = "Alert ('The test worked');">Alert test</Button>
+
+<input id="mathInput" type="number" /> <button on click="myAlertmath()">Multiply x 5 </button>
+
+</body>
+
+<script>
+    function myAlertmath() {
+        var usernumber = document.getElementbyId("mathInput").value;
+        alert("Your number x 5 is  " + usernumber * 5);
+    }
+</script>
+</html>

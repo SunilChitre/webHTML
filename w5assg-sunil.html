@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+/* <br>
+- Create an HTML page with a header and body section that includes a form.<br>
+- The form should have at least 5 input fields and one button (not an input type submit button - since we have no server to submit to).<br>
+- At least one of these input fields should be validated using JavaScript on an onblur event.<br>
+*/
+    <link rel="stylesheet" type="text/css" href="w5assg.css">
+    <title> W5 Assignment Sunil</title> // This will show as web page name
+    <script type="text/javascript" src="w5assg.js"></script>
+</head>
+
+<body>
+
+    <form action="#">
+        <div id="fullpage">
+        <h1>Make an order</h1>
+        <table:border="0">
+            <tr>
+                <td class= "label_col">First Name:</td>
+                <td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstname();"></td>
+                <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class= "label_col">Last Name:</td>
+                <td class="input_col"><input name="lastName" id="lastName" type="text" onblur="validateLastname();"></td>
+                <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class= "label_col">Phone Number:</td>
+                <td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhone()"; placeholder="xxx-xxx-xxxx"></td>
+                <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxxx &nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class="label_col">Order Quantity:</td>
+                <td class="input_col"><input name="quantity" id="quantity" type="number" ></td>
+                <td class="feedback_col"><span id="quantityPrompt">1&ndash;55</span></td>
+                </tr>
+            <tr>
+                <td class="label_col">Price:</td>
+                <td class="input_col"><input name="price" id="price" type="text" value="10.00" readonly></td>
+            </tr>
+            <tr>
+                <td class="Button" id="Button" colspan="3><span class="buttonBG" onclick="calcOrder();">Order Now</span></td>
+            </tr>
+        </table>
+
+        <span id="orderConfirm">&nbsp;</span>
+        </div>
+        
+        <!--
+        <input type="submit" value="submit"/>
+        -->
+
+    </form>
+
+</body>
+
+</html>

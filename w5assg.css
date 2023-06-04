@@ -1,0 +1,21 @@
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+table{
+  width: 500px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+td{
+  vertical-align: middle;
+  padding: 5px;
+  word-wrap: break-word;
+}

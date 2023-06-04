@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="formvalidation1.css">
+    <title> HTML forms 5 - Validation </title> // This will show as web page name
+    <script type="text/javascript" src="formvalidation1.js"></script>
+</head>
+
+<body>
+
+    <form action="#">
+    <div id="fullpage">
+    <h1>Make an order</h1>
+    <table border="0">
+    <tr>
+        <td class "label_col">First Name:</td>
+        <td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstname();"></td>
+        <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+    </tr>
+    <tr>
+        <td class "label_col">Last Name:</td>
+        <td class="input_col"><input name="lastName" id="lastName" type="text" onblur="validateLastname();"></td>
+        <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+    </tr>
+    <tr>
+        <td class "label_col">Phone Number:</td>
+        <td class="input_col"><input name="phone" id="lastName";"></td>
+        <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxxx &nbsp;</span></td>
+    </tr>
+    
+    
+    </form>
+
+</body>
+
+</html>
